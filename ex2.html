@@ -3,37 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>WEB</title>
-    <script>
-      function LinksSetColor(color){
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = color;
-          i++;
-        }
-      }
-      function BodySetColor(color){
-        document.querySelector('body').style.color = color;
-      }
-      function BodySetBackgroundcolor(color){
-        document.querySelector('body').style.backgroundColor = color;
-      }
-      function nightDayHandler(self) {
-        var target = document.querySelector('body');
-          if (self.value === 'night') {
-            BodySetBackgroundcolor('black');
-            BodySetColor('white');
-            self.value = 'day';
-            LinksSetColor('powderblue');
-          }
-          else {
-            BodySetBackgroundcolor('white');
-            BodySetColor('black');
-            self.value = 'night';
-            LinksSetColor('blue');
-          }
-       }
-    </script>
+    <script src="colors.js"></script>
   </head>
   <body>
     <H1><a href="ex2.html">WEB</a></H1>
